@@ -2,7 +2,6 @@ import os
 import signal
 import subprocess
 from pathlib import Path
-from pexpect import spawn
 from ipykernel.kernelbase import Kernel
 
 from .__init__ import __version__
