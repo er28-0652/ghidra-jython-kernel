@@ -111,4 +111,4 @@ ghidra.GhidraLauncher "ghidra.python.PythonRun"'.format(
         return result
     
     def kill(self):
-        self.child.kill(signal.SIGKILL)
+        self.child.kill(signal.SIGILL)
