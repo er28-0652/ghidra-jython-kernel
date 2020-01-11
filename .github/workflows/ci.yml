@@ -36,3 +36,4 @@ jobs:
         name: run test
         run:
           pytest -v tests
+        shell: bash
