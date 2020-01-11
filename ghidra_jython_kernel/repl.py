@@ -2,14 +2,8 @@ import signal
 import subprocess
 import os
 from pathlib import Path
+from pexpect import spawn
 
-# pexpect.spawn only supports windows. instead, use PopenSpawn
-try:
-    from pexpect import spawn
-    from functools import partial
-    spawn = partial(spawn, echo=False)
-except ImportError:
-    from pexpect.popen_spawn import PopenSpawn as spawn
 
 
 def execute(cmd):
